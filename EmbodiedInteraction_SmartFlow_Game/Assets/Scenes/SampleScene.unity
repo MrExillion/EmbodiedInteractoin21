@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 117621166}
   - component: {fileID: 117621165}
   - component: {fileID: 117621164}
+  - component: {fileID: 117621167}
   m_Layer: 0
   m_Name: Dispenser2
   m_TagString: Untagged
@@ -165,7 +166,7 @@ BoxCollider:
   m_GameObject: {fileID: 117621162}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -218,6 +219,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117621162}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &117621167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117621162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41cc9ea5c0007b4abbd5e19b56e50d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DispenseableObjects:
+  - {fileID: 8295298477880916527, guid: fff2831da5ccabf4a9b3d4e58979ac50, type: 3}
+  dispensecounter: 0
+  dispenseID: 0
+  frequencyList:
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0.8
+  - 0.75
+  - 0.5
+  - 0.25
+  - 0.12
 --- !u!1 &158557292
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +259,7 @@ GameObject:
   - component: {fileID: 158557296}
   - component: {fileID: 158557295}
   - component: {fileID: 158557294}
+  - component: {fileID: 158557297}
   m_Layer: 0
   m_Name: Dispenser3
   m_TagString: Untagged
@@ -260,7 +290,7 @@ BoxCollider:
   m_GameObject: {fileID: 158557292}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -313,6 +343,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158557292}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &158557297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158557292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41cc9ea5c0007b4abbd5e19b56e50d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DispenseableObjects:
+  - {fileID: 8295298477880916527, guid: f041b3cdcf64b054795cdaba27eeb321, type: 3}
+  dispensecounter: 0
+  dispenseID: 0
+  frequencyList:
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0.8
+  - 0.75
+  - 0.5
+  - 0.25
+  - 0.12
 --- !u!1 &450953007
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6dd4e07f5c2b9c49a0970480b82ef75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DifficultyLevel: 10
+  DifficultyLevel: 1
 --- !u!114 &543839460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d6cbd8f63d0514fa6c0d7f70069cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DispenseableObjects: []
+  dispensecounter: 0
+  dispenseID: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +690,7 @@ GameObject:
   - component: {fileID: 1066150271}
   - component: {fileID: 1066150270}
   - component: {fileID: 1066150269}
+  - component: {fileID: 1066150272}
   m_Layer: 0
   m_Name: Dispenser4
   m_TagString: Untagged
@@ -659,7 +721,7 @@ BoxCollider:
   m_GameObject: {fileID: 1066150267}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -712,6 +774,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066150267}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1066150272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066150267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41cc9ea5c0007b4abbd5e19b56e50d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DispenseableObjects:
+  - {fileID: 8295298477880916527, guid: fff2831da5ccabf4a9b3d4e58979ac50, type: 3}
+  dispensecounter: 0
+  dispenseID: 0
+  frequencyList:
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  - 0.25
 --- !u!1 &1130712374
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +831,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772f56ef579c2cc44a203f602655f071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killedWaveIndex: 0
+  lastHitDispenseType: 
+  blueMat: {fileID: 2100000, guid: f57e67f3640d2304baf6fee68277544a, type: 2}
+  greenMat: {fileID: 2100000, guid: 4a64b53e94eee174e8b4888c1cd2fb88, type: 2}
+  redMat: {fileID: 2100000, guid: cdb0ef092135e0e4393e8062b53390d7, type: 2}
 --- !u!4 &1130712376
 Transform:
   m_ObjectHideFlags: 0
@@ -768,7 +863,7 @@ GameObject:
   - component: {fileID: 1388990770}
   - component: {fileID: 1388990772}
   m_Layer: 0
-  m_Name: Text
+  m_Name: Difficulty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,6 +954,7 @@ GameObject:
   - component: {fileID: 1721489191}
   - component: {fileID: 1721489190}
   - component: {fileID: 1721489189}
+  - component: {fileID: 1721489192}
   m_Layer: 0
   m_Name: Dispenser5
   m_TagString: Untagged
@@ -889,7 +985,7 @@ BoxCollider:
   m_GameObject: {fileID: 1721489187}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -942,6 +1038,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721489187}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1721489192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721489187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41cc9ea5c0007b4abbd5e19b56e50d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DispenseableObjects:
+  - {fileID: 8295298477880916527, guid: 022dfe41de6521b48a9e16be8ae9b57e, type: 3}
+  dispensecounter: 0
+  dispenseID: 0
+  frequencyList:
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  - 0.25
 --- !u!1 &1747577269
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +1078,7 @@ GameObject:
   - component: {fileID: 1747577273}
   - component: {fileID: 1747577272}
   - component: {fileID: 1747577271}
+  - component: {fileID: 1747577274}
   m_Layer: 0
   m_Name: Dispenser1
   m_TagString: Untagged
@@ -984,7 +1109,7 @@ BoxCollider:
   m_GameObject: {fileID: 1747577269}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1037,6 +1162,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747577269}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1747577274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747577269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41cc9ea5c0007b4abbd5e19b56e50d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DispenseableObjects:
+  - {fileID: 8295298477880916527, guid: 022dfe41de6521b48a9e16be8ae9b57e, type: 3}
+  dispensecounter: 0
+  dispenseID: 0
+  frequencyList:
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  - 0.25
 --- !u!1 &1896334747
 GameObject:
   m_ObjectHideFlags: 0
